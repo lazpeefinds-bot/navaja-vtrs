@@ -1,0 +1,63 @@
+{% extends "base.html" %} {% block title %}Home - Election System{% endblock %}
+{% block content %}
+
+<div class="text-center">
+  <h1 class="text-5xl font-bold text-indigo-900 mb-6">Election System</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    <!-- Positions Card -->
+    <a
+      href="{{ url_for('positions') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Positions</h2>
+      <p class="text-gray-600">Manage election positions and vacancies</p>
+    </a>
+
+    <!-- Candidates Card -->
+    <a
+      href="{{ url_for('candidates') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Candidates</h2>
+      <p class="text-gray-600">Manage candidates for each position</p>
+    </a>
+
+    <!-- Voting Card -->
+    <a
+      href="{{ url_for('login') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Vote</h2>
+      <p class="text-gray-600">Cast your vote for candidates</p>
+    </a>
+
+    <!-- Results Card -->
+    <a
+      href="{{ url_for('results') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Results</h2>
+      <p class="text-gray-600">View voting results and statistics</p>
+    </a>
+
+    <!-- Winners Card -->
+    <a
+      href="{{ url_for('winners') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Winners</h2>
+      <p class="text-gray-600">See election winners</p>
+    </a>
+
+    <!-- Voters Card -->
+    <a
+      href="{{ url_for('voters') }}"
+      class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Voters</h2>
+      <p class="text-gray-600">View registered voters</p>
+    </a>
+  </div>
+</div>
+{% endblock %}

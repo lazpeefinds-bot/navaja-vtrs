@@ -1,0 +1,17 @@
+{
+  "name": "navaja-election",
+  "version": "1.0.0",
+  "description": "A comprehensive web-based election management system built with Flask, SQLAlchemy, and Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./static/src/input.css -o ./static/src/output.css",
+    "watch:css": "tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
