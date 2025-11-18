@@ -43,6 +43,7 @@ def add_position():
             numOfPositions=int(num_positions),
             posStat=pos_stat
         )
+        
         db.session.add(new_position)
         db.session.commit()
         flash('Position added successfully!', 'success')
